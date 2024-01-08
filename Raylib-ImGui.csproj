@@ -25,17 +25,11 @@
     </ItemGroup>
 
     <ItemGroup>
-        <EmbeddedResource Include="Assets/Comfortaa.ttf">
-            <LogicalName>Comfortaa.ttf</LogicalName>
-        </EmbeddedResource>
         <EmbeddedResource Include="Assets/icon.png">
           <LogicalName>icon.png</LogicalName>
         </EmbeddedResource>
         <EmbeddedResource Include="Assets/pfp.png">
             <LogicalName>pfp.png</LogicalName>
-        </EmbeddedResource>
-        <EmbeddedResource Include="Assets/bg.png">
-            <LogicalName>bg.png</LogicalName>
         </EmbeddedResource>
     </ItemGroup>
 </Project>
