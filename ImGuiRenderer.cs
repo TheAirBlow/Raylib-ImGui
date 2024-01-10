@@ -49,7 +49,7 @@ public class ImGuiRenderer {
     /// <param name="user_data">User data</param>
     /// <param name="text">Clipboard text</param>
     private static void SetClipboardCallback(IntPtr user_data, IntPtr text)
-        => Raylib.SetClipboardText(Marshal.PtrToStringAuto(text)!);
+        => Raylib.SetClipboardText(Marshal.PtrToStringAnsi(text)!);
 
     /// <summary>
     /// Get clipboard ImGui callback
@@ -59,7 +59,7 @@ public class ImGuiRenderer {
         // raylib can return a null pointer, and ImGui.NET would crash
         // because of it, so I did this bullshit to fix it, crazy right?
         var ptr = (IntPtr)Raylib.GetClipboardText();
-        if (ptr == IntPtr.Zero) ptr = Marshal.StringToHGlobalAuto("");
+        if (ptr == IntPtr.Zero) ptr = Marshal.StringToHGlobalAnsi("");
         return ptr;
     }
     
