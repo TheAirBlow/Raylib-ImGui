@@ -9,7 +9,7 @@
         <PackageId>Raylib_ImGui</PackageId>
         <Title>Raylib-ImGui</Title>
         <Authors>TheAirBlow</Authors>
-        <Version>1.0.1</Version>
+        <Version>1.0.2</Version>
         <Description>Open-source ImGui renderer for Raylib</Description>
         <Copyright>Copyright © TheAirBlow 2024</Copyright>
         <PackageProjectUrl>https://github.com/TheAirBlow/Raylib-ImGui</PackageProjectUrl>
